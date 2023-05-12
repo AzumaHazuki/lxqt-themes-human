@@ -1,0 +1,72 @@
+/* The main Leave dialog window */
+QDialog {
+	color:				#101010;
+	background:			#efebe7;
+
+	border:				1px solid #8d7a68;
+}
+
+/* Caption colors */
+QLabel {
+	color:				#101010;
+	background:			transparent;
+
+	padding:			8px;
+}
+
+/* Available actions - only partially themeable as of LXQt 1.2.x */
+QAbstractItemView {
+	color:				#101010;
+	background:			#ffffff; /* This doesn't work for some reason... */
+	background-image:		url(assets/menus/bg.png); /* ...but this does! */
+
+	border:				3px solid transparent;
+	border-image:			url(assets/boxes/entry.png) 3;
+}
+
+/* Button settings */
+QPushButton {
+        color:                          #101010;
+        background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #fefefe, stop:1 #efe8e1);
+
+	border:				3px solid transparent;
+        border-image:                   url(assets/buttons/button.png) 3;
+
+        padding-left:                   24px;
+        padding-right:                  24px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+QToolButton {
+        color:                          #101010;
+        background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #fefefe, stop:1 #efe8e1);
+
+	border:				3px solid transparent;
+        border-image:                   url(assets/buttons/button.png) 3;
+
+        padding-left:                   6px;
+        padding-right:                  6px;
+        padding-top:                    4px;
+        padding-bottom:			4px;
+
+	margin-left:			10px;
+	margin-right:			10px;
+}
+
+QPushButton:hover, QToolButton:hover {
+        color:                          #101010;
+        background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #fefefe, stop:1 #efe8e1);
+
+        border-image:                   url(assets/buttons/hover.png) 3;
+}
+
+QPushButton:pressed, QToolButton:pressed {
+        color:                          #101010;
+        background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #d0c8c1, stop:0.40 #d0c8c1, stop:0.41 #cfc7c0, stop:1 #c5bcb4);
+
+        border-image:                   url(assets/buttons/active.png) 3;
+}

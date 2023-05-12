@@ -1,0 +1,210 @@
+/* Panel */
+#panel {
+	color:				#101010;
+	background:			#efebe7;
+
+	border:				2px solid transparent;
+	border-image:			url(assets/menus/menuframe.png) 2;
+}
+
+/* Buttons */
+QToolButton::menu-indicator {
+	image:				none;
+}
+
+#closeButton {
+        color:                          #101010;
+        background:                     transparent;
+
+        border:                         3px solid transparent;
+
+	padding:			1px;
+
+	qproperty-icon:			url(assets/icons/cancel.svg);
+	qproperty-iconSize:		16px;
+}
+
+#actionButton {
+        color:                          #101010;
+        background:                     transparent;
+
+        border:                         2px solid transparent;
+
+	padding:			3px;
+
+	qproperty-icon:			url(assets/icons/menu.svg);
+	qproperty-iconSize:		16px;
+}
+
+#closeButton:hover, #actionButton:hover {
+        color:                          #101010;
+        background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #fefefe, stop:1 #efe8e1);
+
+        border-image:                   url(assets/buttons/hover.png) 3;
+}
+
+#closeButton:pressed, #actionButton:pressed {
+        color:                          #101010;
+        background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #d0c8c1, stop:0.40 #d0c8c1, stop:0.41 #cfc7c0, stop:1 #c5bcb4);
+
+        border-image:                   url(assets/buttons/active.png) 3;
+}
+
+/* Command Box */
+#commandEd {
+        color:                          #101010;
+        background:                     #ffffff;
+
+        selection-color:                #ffffff;
+        selection-background-color:     #ae7249;
+
+        border:                         3px solid transparent;
+        border-image:                   url(assets/boxes/entry.png) 3;
+
+        margin:                         2px;
+        padding:                        2px;
+
+        min-height:                     18px;
+}
+
+/* Search results list */
+#commandList {
+	background:			#ffffff;
+	color:				#101010;
+
+	selection-color:		#ffffff;
+	selection-background-color:	#ae7249;
+	alternate-background-color:	#ffffff;
+
+	border:				1px solid #8d7a68;
+}
+
+#commandList::item, #commandList::item:alternate {
+	color:				#101010;
+	background:			#ffffff;
+}
+
+#commandList::item:hover, #commandList::item:selected {
+	color:                          #ffffff;
+        background:                     #ae7249;
+}
+
+/* Menus */
+QMenu {
+        color:                          #101010;
+        background:                     #f8f5f2;
+
+        border:                         2px solid transparent;
+        border-image:                   url(assets/menus/menuframe.png) 2;
+
+        padding:                        3px 0px;
+
+        min-width:                      100px;
+
+        font:                           normal;
+}
+
+QMenu::item {
+        color:                          #101010;
+        background:                     transparent;
+
+        border:                         1px solid transparent;
+        border-radius:                  2px;
+
+        padding-left:                   6px;
+        padding-right:                  2px;
+        margin:                         0px 2px;
+
+        min-width:                      100px;
+        min-height:                     23px;
+}
+
+
+QMenu::item:selected {
+        color:                          #ffffff;
+        background:                     qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #bc7945, stop:1 #936345);
+
+        border:                         1px solid #ab874b;
+}
+
+QMenu::item:disabled {
+        color:                          #b5b3ac;
+        background:                     transparent;
+}
+
+QScrollBar {
+        color:                          transparent;
+        background:                     #d1c8bf;
+
+        border:                         1px solid #aa9c8f;
+
+        width:                          15px;
+}
+
+QScrollBar::handle {
+        color:                          #efebe7;
+        background:                     qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #f8f7f5, stop:1 #eae5e0);
+
+        background-image:               url(assets/scrollbars/grip.png);
+        background-position:            center;
+        background-repeat:              no-repeat;
+        background-attachment:          fixed;
+
+        border:                         2px solid #81756a;
+        border-image:                   url(assets/scrollbars/handle.png) 2;
+
+        margin:                         15px -1px;
+}
+
+QScrollBar::handle:hover {
+        color:                          #efebe7;
+        background:                     qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #fefefd, stop:1 #f0ede9);
+
+        background-image:               url(assets/scrollbars/grip.png);
+        background-position:            center;
+        background-repeat:              no-repeat;
+        background-attachment:          fixed;
+
+        border:                         1px solid #81756a;
+        border-image:                   url(assets/scollbars/handle.png) 2;
+}
+
+QScrollBar::add-line {
+        color:                          #101010;
+        background:                     transparent;
+
+        border:                         2px solid transparent;
+        border-image:                   url(assets/scrollbars/add-line.png);
+}
+
+QScrollBar::add-line:pressed {
+        color:                          #101010;
+        background:                     transparent;
+
+        border:                         2px solid transparent;
+        border-image:                   url(assets/scrollbars/add-line-pressed.png);
+}
+
+QScrollBar::sub-line {
+        color:                          #101010;
+        background:                     transparent;
+
+        border:                         2px solid transparent;
+        border-image:                   url(assets/scrollbars/sub-line.png);
+}
+
+QScrollBar::sub-line:pressed {
+        color:                          #101010;
+        background:                     transparent;
+
+        border:                         2px solid transparent;
+        border-image:                   url(assets/scrollbars/sub-line-pressed.png);
+}
+
+QScrollBar::add-page,
+QScrollBar::sub-page {
+        color:                          transparent;
+        background:                     transparent;
+
+        border:                         none;
+}
